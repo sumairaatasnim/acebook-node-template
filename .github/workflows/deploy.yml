@@ -34,5 +34,5 @@ jobs:
           aws s3 cp acebook-app.zip s3://sumairaa-acebook/acebook-app.zip
           aws deploy create-deployment \
             --application-name sumairaa-application \
-            --deployment-group-name production \
+            --deployment-group-name sumairaa-deployment \
             --s3-location bucket=sumairaa-acebook,key=acebook-app.zip,bundleType=zip
