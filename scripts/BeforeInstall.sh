@@ -1,4 +1,3 @@
 #!/bin/bash
-echo "Installing application dependencies..."
-cd /var/www/acebook
-npm install
+# This script runs before installing the application bundle.
+# No action is needed here for this deployment.
