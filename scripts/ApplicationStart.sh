@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Starting Node.js application..."
+echo "Starting Node.js application with PM2..."
 cd /var/www/acebook
-npm start &
+pm2 start ./bin/www --name "acebook-app"
