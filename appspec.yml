@@ -1,8 +1,3 @@
-version: 0.0
-os: linux
-files:
-  - source: /
-    destination: /var/www/acebook
 hooks:
   ApplicationStop:
     - location: scripts/ApplicationStop.sh
@@ -14,9 +9,5 @@ hooks:
       runas: root
   ApplicationStart:
     - location: scripts/ApplicationStart.sh
-      timeout: 300
-      runas: root
-  ValidateService:
-    - location: scripts/ValidateService.sh
       timeout: 300
       runas: root
